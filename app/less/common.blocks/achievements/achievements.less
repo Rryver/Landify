@@ -1,0 +1,58 @@
+.achievements {
+
+    &__header {
+        display: inline-block;
+        max-width: 540px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 540px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 255px;
+        margin-bottom: 40px;
+
+        &:nth-child(odd) {
+            margin-right: 25px;
+        }
+
+        &:last-of-type(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .achievements {
+        &__list {
+            flex-direction: column;
+            align-content: center;
+        }
+
+        &__item {
+            &:nth-child(odd) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .achievements {
+        &__header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}

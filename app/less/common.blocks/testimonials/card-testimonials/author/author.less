@@ -1,0 +1,26 @@
+.author-text-template {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.714em;
+    color: #969BAB;
+}
+
+.author {
+
+    &__name {
+        display: block;
+        font-weight: @font-weight-bold;
+        font-size: 18px;
+        line-height: 1.556em;
+        color: @color-text-black;
+    }
+
+    &__work-position {
+        .author-text-template();
+
+    }
+
+    &__company {
+        .author-text-template();
+    }
+}
