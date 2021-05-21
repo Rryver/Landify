@@ -17,10 +17,10 @@
 }
 
 
-.title-small {
-    font-weight: @font-weight-medium;
-    font-size: 24px;
-    line-height: 1.333em;
+.title-big {
+    font-weight: @font-weight-bold;
+    font-size: 72px;
+    line-height: 1.361em;
 }
 
 .title-medium {
@@ -35,8 +35,29 @@
     line-height: 1.35em;
 }
 
-.title-big {
-    font-weight: @font-weight-bold;
-    font-size: 72px;
-    line-height: 1.361em;
+.title-small {
+    font-weight: @font-weight-medium;
+    font-size: 24px;
+    line-height: 1.333em;
+}
+
+
+@media screen and (max-width: 450px) {
+    .title-big {
+        font-size: 48px;
+    }
+
+    .title-medium {
+        font-size: 32px;
+    }
+
+    .title-medium-small {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .title-big {
+        font-size: 32px;
+    }
 }

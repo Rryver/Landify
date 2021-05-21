@@ -1,15 +1,61 @@
 .header {
-    display: flex;
-    justify-content: space-between;
+    //display: flex;
+    //justify-content: space-between;
     padding: 16px 0;
+    text-align: left;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
     &__logo-site {
+        display: inline-block;
         margin-right: 32px;
+        vertical-align: sub;
     }
 
     &__nav-menu {
-
+        display: block;
     }
 
+    &__badges {
+        display: inline-block;
+        float: right;
+    }
 
+    &__badge {
+        display: inline-block;
+        margin-right: 12px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__badge-image {
+        display: inline-block;
+    }
+
+    &__menu-btn {
+        display: none;
+        float: right;
+        border: none;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .header__badges {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .header {
+        &__menu-btn {
+            display: inline-block;
+        }
+    }
 }

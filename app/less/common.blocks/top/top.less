@@ -30,3 +30,35 @@
         display: inline-block;
     }
 }
+
+@media screen and (max-width: 1170px) {
+    .top {
+        padding-bottom: 50px;
+
+        text-align: center;
+
+        &__title {
+            display: block;
+        }
+
+        &__mockup {
+            display: block;
+            margin-top: 40px;
+            margin-left: 0;
+        }
+
+        &__link {
+            margin-left: -32px;
+        }
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .top {
+        text-align: center;
+
+        &__title {
+            margin-top: 60px;
+        }
+    }
+}
